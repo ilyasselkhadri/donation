@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plateforme de Collecte de Dons</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <marquee><h1>PLATEFORME DE DONATION</h1></marquee>
+  </header>
+  <main>
+    <section class="campaign">
+        <h2>Campagne en Cours</h2>
+        <div class="campaign-details">
+          <h3>Titre de la campagne : " L'EAU "</h3>
+          <p> L’eau est source de vie, elle est indispensable à la survie des êtres vivants. Il est difficile de lui
+             attribuer une valeur monétaire tant cette ressource est précieuse. 
+            Les cours d’eau jouent un rôle essentiel dans le cycle hydrologique. Ils sont à la fois des canaux versants 
+            pour l’eau de surface, des habitats pour un très grand nombre d’organismes, une source de nourriture et des corridors de migration.
+            Le Canada possède 7% de l’eau douce mondiale, la plus grande quantité pour un pays. C’est une ressources précieuse qu'il faut 
+            absolument protéger et économiser. Les Canadiens étant les plus grands consommateurs d’eau, il nous faut absolument changer nos 
+            comportements et notre vision face à cette ressource</p>
+            <h3>Objectif de collecte</h3>
+          <p>Notre objectif est de collecter 50 000 $ pour financer certains projets visant à creuser des puits visant à fournir de l'eau 
+            potable aux communautés défavorisées à travers le Maroc. Chaque dollar compte dans notre lutte pour éliminer la vulnérabilité hydrique</p>
+          <img src="https://fr.hespress.com/wp-content/uploads/2022/12/eau-maroc-copie.jpg" width="500" height="350"alt="Campagne Image">
+          <div class="campaign-info">
+            <h3>zones concernées</h3>
+            <ul>
+                <li><strong>Régions désertiques :</strong> comprennent des zones telles qu'Errachidia, Souss-Massa et Rehamna, où certaines zones peuvent rencontrer des difficultés d'approvisionnement en eau en raison du manque de précipitations et des conditions environnementales difficiles.</li>
+                <li><strong>Zones rurales :</strong> dans les régions du nord telles que Taza, Al Hoceima et Tétouan, certaines zones pourraient être confrontées à des difficultés d'approvisionnement en eau potable en raison du retard des infrastructures et du développement économique.</li>
+                <li><strong>Zones urbaines encombrées :</strong> comme à Casablanca, Rabat et Fès, les bidonvilles de ces villes peuvent avoir du mal à fournir de l'eau potable et des installations sanitaires en raison de la forte densité de population et de la pauvreté.</li>
+                <li><strong>Zones montagneuses :</strong> Dans les montagnes de l'Atlas et dans les campagnes, certaines zones peuvent rencontrer des difficultés d'approvisionnement en eau en raison de leur nature accidentée et des difficultés d'accès.</li>
+              </ul>
+            <h3>Impact Vidéo</h3>
+            <a href="https://youtu.be/q4TVt8FC7Yc?si=RAhmD3faFnDoysE6"><img src="https://static.vecteezy.com/system/resources/previews/019/879/206/non_2x/video-camera-symbol-video-camera-icon-symbol-illustration-on-transparent-background-free-png.png" width="200" height="200" alt="Facebook"></a>
+            <h4>Prochain Événement</h4>
+            <p>Rejoignez-nous pour une journée de nettoyage des plages le 15 juillet. Ensemble, nous pouvons faire une différence!</p>
+          </div>
+          <div class="donate-now">
+            <h3>Faites un Don Maintenant!</h3>
+            <p>Aidez-nous à atteindre notre objectif de collecte en faisant un don dès maintenant.</p>
+            <button><a href="#sec1">Faire un Donation </a></button>
+            <p>Partagez cette campagne avec vos amis et votre famille:</p>
+            <div class="social-media-icons">
+              <a href="https://web.facebook.com/pagefordonations"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png" width="42" height="42" alt="Facebook"></a>
+              <a href="https://www.instagram.com/donation.deaf.gaza/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png" width="40" height="40" alt="Instagram"></a>
+              <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" width="40" height="40" alt="Whatsapp"></a>
+              <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1245px-Logo_of_Twitter.svg.png" width="40" height="40" alt="Twitter"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="donation-options">
+        <a name="sec1">
+        <h2>Faire un Donation</h2>
+    </a>
+        <form id="donation-form">
+          <div>
+            <label for="amount">Montant du Donation (USD):</label>
+            <input type="number" id="amount" name="amount" placeholder="Entrez le montant" required>
+          </div>
+          <div>
+            <label for="payment-method">Méthode de Paiement:</label>
+            <select id="payment-method" name="payment-method" required>
+              <option value="">Sélectionnez la méthode de paiement</option>
+              <option value="credit-card">Carte de Crédit</option>
+              <option value="paypal">PayPal</option>
+              <option value="CIH">CIH</option>
+              <option value="bank-transfer">Virement Bancaire</option>
+            </select>
+          </div>
+          <div>
+            <label for="donation-frequency">Fréquence du Donation:</label>
+            <select id="donation-frequency" name="donation-frequency">
+              <option value="one-time">Ponctuel</option>
+              <option value="monthly">Récurrente</option>
+              <option value="annually">Annuel</option>
+            </select>
+          </div>
+          <button type="submit">Donation</button>
+        </form>
+        <div id="thank-you-message" style="display: none;">
+          <p>Merci pour votre générosité!</p>
+        </div>
+      </section>
+  </main>
+  <footer>
+    <p>Contactez-nous pour plus d'informations.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
